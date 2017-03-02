@@ -120,8 +120,7 @@ required () {
     "SCRIPTS"
   do
     eval local val="\${${key}}"
-    [ -z "${val}" ] && error "Missing \`
-    ${key}' property"
+    [ -z "${val}" ] && error "Missing \`${key}' property"
   done
 }
 
